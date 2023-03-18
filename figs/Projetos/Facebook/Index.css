@@ -1,0 +1,152 @@
+body {
+background-color: #f4f4f4;
+font-family: arial,sans-serif;
+
+}
+
+section{
+    margin-top: 120px;
+}
+
+
+.section-1{
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+.section-1 img{
+    width: 34%;        
+    margin-left: 20%;
+    margin-top:80px
+    }
+.section-1 p {
+    width:70%;
+    font-size: 25px;
+    margin-left: 20%;
+        
+    
+    }
+.section-2{
+    width: 50%;
+    height: 100%;
+    float: right
+    
+}
+
+.section-2 fieldset{
+    width: 60%;
+    margin-left: 40px;
+    height: 330px;
+    border:none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px 0.5px #8b8888;
+    padding: 20px;
+
+    
+}
+
+.section-2 fieldset input{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    
+    
+    
+}
+
+.section-2 .submit {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #4081cc;
+    border:none;
+    
+}
+    
+.section-2 .passrecovery{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4081cc;
+    font-size: 15px
+        
+    }
+
+.createaccount{
+    background-color: #17b717;
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+
+.createaccount a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.createpag {
+font-size: 14px;
+margin: auto;
+display: block;
+text-align: center;
+width: 60%;
+margin-left: 40px;
+padding: 20px;
+margin-bottom: 90px;
+}
+
+.createpag a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+    
+}
+
+
+footer {
+    clear: both;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+footer ul {
+    width: 85%;
+    margin: auto;
+}
+
+
+
+footer ul li{
+    display: inline-block;
+    font-size: 12px;
+    margin:0px 3px;
+}
+
+footer ul li a {
+     color:#838383;
+    text-decoration: none;
+    
+}
+
+.section-2 fieldset input:focus{
+    outline: none;
+    border-color:#4081cc;
+}
+
+.section-2 .passrecovery:hover,.createpag a:hover,footer ul li a:hover{
+    text-decoration: underline
+}

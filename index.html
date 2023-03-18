@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <title>Portifólio Gabriel</title>
+        <meta name="author" content="Gabriel da Silva Fernandes">
+        <meta charset="utf-8">
+        <meta name="keywords" content="html, css, JavaScript">
+        <link rel="stylesheet" href="normalize.css">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+ 
+
+
+
+    <body class="">
+        <header>
+            <nav id="nav-mobile">           <!--        nav mobile view   --> 
+                <ul>
+                    <li><a href="#section_about">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#section_projects">Projetos</a></li>  
+        
+                    <li> <label class="lidark"><a>Modo noturno</a>
+                        <input type="checkbox" id="checkdark">
+                        <span class="spandarkmode"></span>
+                        <span class="spandarkmode"></span>
+                        </label>
+                    </li>            
+                </ul>
+            </nav>                      <!--        nav mobile view   -->  
+            
+
+
+
+
+                <label id="labelbutton">       <!--        nav mobile buttons   -->          
+                    <button id="buttonnav" style="display: none;">
+                        <span class="spannav"></span>
+                        <span class="spannav"></span>
+                        <span class="spannav"></span> 
+                    </button> 
+                    </label>
+                    
+                    <button id="desablenav" style="display: none;">
+                        <span id="spandesable">x</span>
+                    </button>
+                </label>                       <!--       nav mobile buttons   -->          
+
+               
+                <nav id="nav-others">         <!--        nav others view   -->          
+                    <ul>
+                        <li><a href="#section_about">Sobre mim</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#section_projects">Projetos</a></li>
+                        
+                        <li> <label class="lidark" style="display: none;"><a>Modo noturno</a>
+                            <input type="checkbox" id="checkdark-others" >
+                            <span class="spandarkmode"></span>
+                            <span class="spandarkmode"></span>
+                            </label>
+                        </li>  
+                    </ul>
+                </nav>                          <!--        nav others view   -->
+        </header>
+
+
+    <section id="section_about" >
+        <h1>Sobre mim</h1>
+         <img src="figs/I.svg" alt="Eu cartoon" width="120px" id="img-i"> 
+            <p>Olá, sou Gabriel da Silva Fernandes, tenho 20 anos, moro em São Paulo. Sou  estudante de Gestão de TI pela FATEC e apaixonado por tecnologia, estou me dedicando para me tornar um programador front-end.</p>
+            
+        <div id="father_links">
+            <a class="links" href="https://www.linkedin.com/in/ferndsgabriel/">Linkedin</a></li>
+            <a class="links" href="https://github.com/fndsgabriel?tab=repositories">github</a></li>
+            <a class="links" href="files/curriculo.pdf" download>Currículo</a></li>
+        </div>
+     </section>
+
+     <section id="skills">
+            <h1>Minhas habilidades</h1>
+            <div class="formatskills">
+                <img src="figs/logo_html.svg" alt="html logo" width="90px">
+                <h2>HTML</h2>
+                <span class="skillslevel" id="levelhtml"> </span>
+                <p>HTML é uma linguagem de marcação utilizada para desenvolvimento de sites.</p>
+            </div>
+
+            <div class="formatskills">
+                
+                <img src="figs/logo_css.svg" alt="html logo" width="90px">
+                <h2>CSS</h2>
+                <span class="skillslevel" id="levelcss"> </span>
+                <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site.</p>
+            </div>
+
+            <div class="formatskills">
+                <img src="figs/logo_js.svg" alt="html logo" width="90px">
+                <h2>JavaScript</h2>
+                <span class="skillslevel" id="leveljs"> </span>
+                <p>Javascript, é uma linguagem de programação de uso geral, aplicada principalmente para desenvolvimento web e desenvolvimento de software.</p>
+            </div>
+
+            <div class="formatskills">
+                <img src="figs/logo_python.svg" alt="html logo" width="90px">
+                <h2>Python</h2>
+                <span class="skillslevel" id="levelpy"> </span>
+                <p>O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning.</p>
+            </div>
+     </section>
+
+    <section id="section_projects">
+            <h1>Meus projetos</h1>
+
+        <div id="projets-list">
+
+            <div class="projects">
+                <h2>Tela de registro com dark-mode</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/tela de registro com darkmode/index.htm">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/RegistroComDarkMode">GitHub</a></p>
+            </div>
+
+            <div class="projects">
+                <h2>Cidade de São Paulo</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/cidade de sp/index.html">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/Cidade-de-sp">GitHub</a></p>
+            </div>
+            <div class="projects">
+                <h2>Museu Van Gogh</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/VanGogh/index.html">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/Van-Gogh-Site-Responsivo-">GitHub</a></p>
+            </div>
+            <div class="projects">
+                <h2>Game JokenPo</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/JokenPO/Index.html">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/Game-JokenPO">GitHub</a></p>
+            </div>
+            <div class="projects">
+                <h2>Login Instagram</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/Insta/Index.html">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/Login-Instagram">GitHub</a></p>
+            </div>
+            <div class="projects">
+                <h2>Login Facebook</a></h2>
+                <span class="spancircle">
+                     <span class="VisProj"> <a class="formatA" href="figs/Projetos/Facebook/Index.html">Visualizar Projeto </a> </span>        
+                </span>   
+                <p>Link no <a class="formatA"  href="https://github.com/fndsgabriel/Login-Facebook">GitHub</a></p>
+            </div>
+        </div>     
+          
+    </section>
+
+    <footer>copyright 2023 &copy;</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    (function(){
+        var $navothers = document.querySelector ("#nav-others");
+        var $buttonnav = document.querySelector ("#buttonnav");
+        var $navmobile = document.querySelector ("#nav-mobile");
+        var $desablenav = document.querySelector ("#desablenav");
+        var $checkdark = document.querySelector ("#checkdark")
+        var $checkdarkothers = document.querySelector("#checkdark-others")
+        var $body = document.querySelector("body")
+        var $lidark = document.querySelectorAll(".lidark")
+        var $formatA = document.querySelectorAll(".formatA");
+        var $section = document.querySelectorAll("section")
+
+
+        for (var x = 0; x < $lidark.length; x++){
+        $lidark[x].style.display="block";
+        }
+//////////////////////active e desable navbar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        $buttonnav.style.display="block";
+        $buttonnav.addEventListener("click", activenav);
+
+        function activenav(){
+            $navmobile.style.transform="translateX(0px)";
+            $buttonnav.style.display="none"
+            $desablenav.style.display="block"
+        }
+
+        $desablenav.addEventListener("click", desablenavbar);
+        for (var x = 0; x < $section.length; x++){
+            $section[x].addEventListener("click", desablenavbar);
+        }
+        function desablenavbar(){
+            $navmobile.style.transform="translateX(-300px)";
+            $buttonnav.style.display="block"
+            $desablenav.style.display="none"
+        }
+
+/////////////////////Dark Mode///////////////////////////////////////
+        $checkdark.addEventListener("change", darkmode);
+        $checkdarkothers.addEventListener("change", darkmode);
+        function darkmode() {
+            console.log(this)
+            if (this.checked == true){
+                $body.className=("bodydark")
+                for (var x=0; x < $formatA.length;x++){
+                    $formatA[x].style.color="white"
+                }
+                
+            }
+           else if(this.checked == false){
+            $body.className=("")
+            for (var x=0; x < $formatA.length;x++){
+                    $formatA[x].style.color="black"
+                }
+           }
+        }
+///////////////////////////////////////////////////////////////////////
+
+
+
+        
+        if (window.matchMedia("(min-width:720px)").matches) {
+        $navothers.style.visibility="visible"; 
+        } 
+
+        else{
+        $navothers.style.visibility="hidden";
+        }
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })()
+</script>
+       
+    </body>
+</html>        
+

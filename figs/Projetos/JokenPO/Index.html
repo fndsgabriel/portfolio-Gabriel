@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br>">
+    <head>
+        <meta charset="ut-f8">
+        <title>Jogo</title>
+        <meta name="author" content="Gabriel da Silva Fernandes">
+        <meta name="description" content="Jogo">
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+    <style>
+        .game{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 80px 70px;
+            column-gap: 10px;
+            row-gap: 10px;
+      
+        }
+
+        button img{
+            width: 70px;
+            display: block;
+            margin: auto;;
+        }
+        button{
+            border-radius: 10px;
+            border: solid 0.5px rgba(0, 0, 0, 0.226);
+        }
+
+        .button-game:focus{
+            background-color: rgba(13, 148, 58, 0.377);
+        }
+        .button-resultado:focus{
+            background-color: rgba(148, 13, 13, 0.377);
+               
+        }
+
+        #displaymaquina{
+            grid-column-start: 2;
+            grid-column-end: -1; 
+            display: block;
+            background-color: rgba(0, 0, 0, 0.726);
+            color: white;
+            font-weight: bold; 
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: end;
+            text-align: center;
+            }
+    </style>
+    <body>
+        <div class="game">
+            <button class="button-game" onclick= "simbolo('tesoura')"><img src="fig/tesoura.svg" alt="Tesoura"></button>
+            <button class="button-game" onclick= "simbolo('papel')"><img src="fig/papel.svg" alt="papel"></button>
+            <button class="button-game" onclick= "simbolo('pedra')"><img src="fig/pedra.svg" alt="pedra"></button>
+            <button class="button-resultado" onclick= "calculodoresultado(player,maquinasaida)">Resultado</button>
+            <div id="displaymaquina"> </div>
+        </div>
+
+<script>
+var displaymaquina = document.querySelector ("#displaymaquina");
+var sorteio = new Array ("papel", "tesoura", "pedra");
+var player = "";
+var maquinasaida = "";
+var msg = "";
+
+
+var maquinasaida = sorteio[Math.floor(Math.random()*sorteio.length)];
+
+function simbolo(playersaida){
+    switch (playersaida){
+        case "tesoura":
+            player = "tesoura"
+            break
+        case "papel":
+            player = "papel"
+            break
+            case "pedra":
+            player = "pedra"
+            break
+    }    
+     
+}
+
+
+
+
+function calculodoresultado(a,b){
+    displaymaquina.innerHTML = "";
+   if (a == "pedra" && b == "pedra"){
+    msg = "Empate";
+   }
+   else if (a == "pedra" && b == "tesoura"){
+    msg = "Venceu";
+   }
+   else if (a == "pedra" && b == "papel"){
+    msg = "Perdeu";
+   }
+   else if (a == "tesoura" && b == "tesoura"){
+    msg = "Empate";
+   }
+   else if (a == "tesoura" && b == "papel"){
+    msg = "Venceu";
+   }
+   else if (a == "tesoura" && b == "pedra"){
+    msg = "Perdeu";
+   }
+   else if (a == "papel" && b == "papel"){
+    msg = "Empate";
+   }
+   else if (a == "papel" && b == "pedra"){
+    msg = "Venceu";
+   }
+   else if (a == "papel" && b == "tesoura"){
+    msg = "Perdeu";
+   }
+
+   else{
+    msg = "Por favor, selecione sua jogada."
+   }
+   
+   displaymaquina.innerHTML = "Você jogou  " + player + "  e a maquina jogou  " + maquinasaida +'.<br> Resultado : '+ msg;
+   maquinasaida = sorteio[Math.floor(Math.random()*sorteio.length)];
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+        
+    </body>
+</html>

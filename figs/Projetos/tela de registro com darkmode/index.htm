@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" class="html_white">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="keywords" content="Css, js, html, loading">
+        <meta name="description" content="Tela de login interativa">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="normalize.css">
+
+        <style>
+            html{
+                font-family: arial;
+            }
+            .html_white{
+                background-image: url(figs/white.png);
+                color: black;
+            } 
+            .html_dark{
+                background-image: url(figs/Black.png);
+                color: white;
+            }
+
+            #checkbox_id{
+                display: none;
+                
+            }
+            #darkbutton #check_span{
+                display: block;
+                width: 40px;
+                padding: 2px;
+                background-color:#ccc;
+                border-radius: 10px;
+                border: solid 1px rgb(172, 172, 172);     
+                
+            }
+
+             #check_span:before{
+                content: "";
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: rgb(87, 85, 85);
+                border-radius: 50px;  
+            }
+
+
+           #checkbox_id:checked + #check_span:before{
+            transform: translate(25px);
+           }
+           
+           #darkbutton{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            margin: 10px;
+            display: none;
+           }
+
+            #imgresponsive  {
+            width: 18.75em;
+            display: block;
+            margin: auto;
+           }
+           
+           #imgresponsivediv{
+            margin-top: 20px;
+           }
+
+           #h1{
+
+            text-align: center;
+            display: block;
+            font-size: 0.8em;
+            box-sizing: border-box;
+            
+           }
+           #p{
+            letter-spacing: 1px;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+            box-sizing: border-box;
+           }
+           
+           #registro{
+            display: block;
+            padding: 10px;
+            width: 140px;
+            margin: auto;
+            background-color: rgb(102, 102, 102);
+            border-radius: 10px;
+           }
+
+           #registro a{
+            color: white;
+            text-decoration: none;
+           }
+           #registro:hover{
+            padding: 15px;
+            background-color: rgba(8, 8, 8, 0.74);
+
+           }
+
+           section{
+            display: grid;
+            grid-template-rows: 300px 100px;
+            grid-template-columns: 350px;
+            box-sizing: border-box;
+            justify-content: center;
+            row-gap: 40px;
+            align-items: center;
+           }
+
+           footer{ 
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.911);
+            padding: 5px;
+            box-sizing: border-box;
+            display: grid;
+            justify-content: center;
+            grid-auto-flow: column;
+            position: absolute;
+            bottom: 0;
+
+           }
+           footer img{
+            width: 20px;
+            text-align: center;
+            margin: auto;
+            color: white;
+            margin: 5px;
+           }
+
+           
+           @media screen and (min-width:768px){
+           section{
+            grid-template-rows: 350px 100px;
+            grid-template-columns: 600px;
+           }
+           #imgresponsive {
+
+            width: 26em;
+
+           }
+        }
+
+           @media screen and (min-width:960px){
+           section{
+            grid-template-rows: 500px;
+            grid-template-columns: 500px 500px;
+            
+           }
+           #imgresponsive {
+            width: 26em;
+
+           }
+        
+           
+
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div>
+            <label id="darkbutton">
+                <input type="checkbox" id="checkbox_id"> 
+                <span id="check_span"> </span></span> 
+            </label>
+        </div>
+
+        <section>
+
+        <div id="imgresponsivediv">
+            <img id="imgresponsive" src="figs/renposivewhite.png">
+        </div>
+
+        <div>
+        <div id="h1">
+            <h1>Desenvolvimento front-end é muito legal</h1>
+        </div>
+
+        <div id="p">
+            <p>Com desenvolvimento front-end você explorar sua criatividade e desenvolver aplicações web com múltiplas funções. </p>
+    
+
+        <div id="registro">
+            <a href="#">Registro</a>
+        </div>
+    </div>
+
+
+        
+
+        </section>
+    
+        <footer>
+          
+        <a href="#"><img src="figs/wpp.svg"</a>
+        <a href="#"><img src="figs/insta.svg"</a>
+        <a href="#"><img src="figs/git.svg"</a>
+        
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function(){
+
+var $darkbutton = document.querySelector("#darkbutton");
+$darkbutton.style.display="block";
+
+var $checkbox = document.querySelector ("input[type=checkbox]");
+var $imgresponsive = document.querySelector("#imgresponsive");
+$checkbox.addEventListener ('change', darkmode);
+var $html = document.querySelector("html");
+
+
+function darkmode(){
+
+$html = document.querySelector("html");
+
+    if ($checkbox.checked == true){
+        $html.className = 'html_dark' 
+        $imgresponsive.src='figs/renposiveblack.png'
+        
+    }
+    else if($checkbox.checked == false){
+        $html.className = 'html_white'  
+        $imgresponsive.src='figs/renposivewhite.png'
+
+    }
+}
+})()
+
+</script>
+    </body>
+</html>
